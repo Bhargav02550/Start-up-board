@@ -30,36 +30,36 @@ const Post = () => {
 
   return (
     <div className="Postpage">
-      {post.map((posts) => (
-        <div className="Postcard">
-          <h1>{posts.title}</h1>
-          <h1>{posts.author}</h1>
-          {/* <h2>{posts.comments.map((comment) => <p>{comment}</p>)}</h2> */}
-          {posts.comments && (
-            <div>
-              <h3>Comments</h3>
-              <ul>
-                {/*  */}
-                {Object.keys(posts.comments).map((commentId) => (
-                  <li key={commentId}>{posts.comments[commentId]}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {posts.hash_tags && (
-            <div>
-              <h3>Hash Tags</h3>
-              <ul>
-                {/*  */}
-                {Object.keys(posts.hash_tags).map((hashTagId) => (
-                  <li key={hashTagId}>{posts.hash_tags[hashTagId]}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
-      ))}
-      {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
+      <div className="Verticalscroll">
+        {post.map((posts) => (
+          <div className="Postcard">
+            <h1>{posts.title}</h1>
+            <h1>{posts.author}</h1>
+            {/* <h2>{posts.comments.map((comment) => <p>{comment}</p>)}</h2> */}
+            {/* {posts.comments && (
+              <div>
+                <h3>Comments</h3>
+                <ul>
+                  {Object.keys(posts.comments).map((commentId) => (
+                    <li key={commentId}>{posts.comments[commentId]}</li>
+                  ))}
+                </ul>
+              </div>
+            )} */}
+            {/* {posts.hash_tags && (
+              <div>
+                <h3>Hash Tags</h3>
+                <ul>
+                  {Object.keys(posts.hash_tags).map((hashTagId) => (
+                    <li key={hashTagId}>{posts.hash_tags[hashTagId]}</li>
+                  ))}
+                </ul>
+              </div>
+            )} */}
+          </div>
+        ))}
+        {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
+      </div>
     </div>
   );
 };

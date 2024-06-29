@@ -1,17 +1,40 @@
-.Postcard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgba(128, 128, 128, 0.07);
-    // height: 300px;
-    width: 500px;
+.Postcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  // height: 300px;
+  // margin-top: 50px;
+  // width: 500px;
 }
 
-.Postpage{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.Verticalscroll {
+  width: 500px;
+  height: 100vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #919191;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #edecec;
+    width: 5px;
+    border-radius: 5px;
+  }
+}
+
+.Postpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(128, 128, 128, 0.07);
+  // height: 90vh;
+  // width: 500px;
 }
