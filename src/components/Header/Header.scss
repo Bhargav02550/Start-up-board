@@ -1,0 +1,19 @@
+@import url('../Navbar/Navbar.scss');
+
+
+.Header {
+    height: 50px;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: whitesmoke;
+    width: 100vw; /* Use viewport width to ensure it spans the entire width */
+    overflow: hidden;
+}
+
+.Header-logo {
+    font-size: 15px;
+    font-weight: 500;
+}
